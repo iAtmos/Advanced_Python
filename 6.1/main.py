@@ -1,7 +1,7 @@
 import logging
 from flask import Flask
-from flask_wtf import flaskForm
-from wtforms import InteqerField
+from flask_wtf import FlaskForm
+from wtforms import IntegerField
 from wtforms.validators import InputRequired
 
 
@@ -10,8 +10,8 @@ logger = logging.getLogger('fd')
 
 
 class DivideForm(FlaskForm):
-    a = InteqerField(validators=[InputRequired])
-    b = InteqerField(validators=[InputRequired])
+    a = IntegerField(validators=[InputRequired])
+    b = IntegerField(validators=[InputRequired])
 
 
 @app.route('/devide/', methods=["GET"])
