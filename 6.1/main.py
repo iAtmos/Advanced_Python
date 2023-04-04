@@ -18,7 +18,7 @@ class DivideForm(FlaskForm):
 def divide():
     form = DivideForm()
 
-    if form.validate_on_submite():
+    if form.validate_on_submit():
         a, b = form.a.data, form.b.data
         logger.debug(f"Form is valid. a={a}, b={b}")
         return f"a / b = {a / b:.2}"
@@ -33,7 +33,8 @@ def handle_exception(e: ZeroDivisionError):
 
 
 if __name__ == "__main__":
-    logger.basicConfig(level=logging.DEBUG, filename="st.log", format="%(asctime)s - %(name)s - %(name)s - %(levelname)s - %(message)s", datetime="%H:%M:%S")
+    logging.basicConfig(level=logging.DEBUG, filename="st.log", format="%(asctime)s - %(name)s - %(name)s - %("
+                                                                       "levelname)s - %(message)s", datefmt="%02d:%02d:%02d")
     logger.info("Started divider server")
     app.config["WTF_CSRF_ENABLED"] = False
     app.run(debug=True)
