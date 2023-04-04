@@ -14,7 +14,7 @@ class DivideForm(FlaskForm):
     b = IntegerField(validators=[InputRequired])
 
 
-@app.route('/devide/', methods=["GET"])
+@app.route('/devide/', methods=["POST"])
 def divide():
     form = DivideForm()
 
