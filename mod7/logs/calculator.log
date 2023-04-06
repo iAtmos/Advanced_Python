@@ -1,0 +1,9 @@
+INFO | 19:28:04 | calculate_logger | Start of execution of the 'subtracting_numbers' function Received data [3.0, 1.0]
+INFO | 19:28:04 | calculate_logger | The received answer is 2.0
+
+INFO | 19:44:32 | calculate_logger | Start of execution of the 'addition_numbers' function. Received data [23.0, 1.0]
+INFO | 19:44:32 | calculate_logger | The received answer is 24.0
+
+INFO | 19:44:46 | calculate_logger | Start of execution of the 'addition_numbers' function. Received data [23.0]
+INFO | 19:44:46 | calculate_logger | The received answer is 23.0
+
