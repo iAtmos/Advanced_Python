@@ -246,4 +246,4 @@ if __name__ == '__main__':
     if not check_exist:
         insert_data()
         give_me_book()
-    # app.run
+    app.run
